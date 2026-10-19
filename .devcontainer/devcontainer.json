@@ -5,6 +5,9 @@
     "--name", "job-processing-engine"
   ],
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "mounts":[
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,readonly"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
