@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 set -e
 
 # Install uv if it is not present
@@ -10,3 +10,7 @@ echo 'export PYTHONDONTWRITEBYTECODE=1' >> ~/.bashrc
 
 # Install your dependencies
 uv sync
+
+# Configure github email and username
+git config --global user.email "bassihani@gmail.com"
+git config --global user.name "bassihani"
