@@ -19,5 +19,14 @@ class Job:
         else:
             print(f"Job status is not pending, hence not starting it {self.status}")
             return False
-        
         return True
+
+    def process_job(job):
+        if job.customer.is_active:
+            status = job.start()
+            if status:
+                job.status = "completed"
+                job.result = "Report generated successfully"
+
+    def generate_report(job):
+        pass
